@@ -197,6 +197,10 @@ p {
   overflow-y: auto;
 }
 
+.accordion .content {
+  max-width: 50ch;
+}
+
 .accordion .contentBx.active .content {
   height: 150px;
   padding: 10px;
