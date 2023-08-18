@@ -140,6 +140,46 @@ p {
 	transition: 0.4s;
 }
 
+.up-accordion {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.accordion {
+	
+	max-width: 800px;
+	
+	
+}
+
+.accordion .contentBx {
+	position: relative;
+	margin: 10px 20px;
+} 
+
+.accordion .contentBx .label {
+	position: relative;
+	padding: 10px;
+	background: #333;
+	color: #f1f1f1;
+	cursor: pointer;
+}
+.accordion .contentBx .label:before {
+	content: '+';
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	font-size: 1.5em;
+}
+.accordion .contentBx .content {
+	position: relative;
+	padding: 10px;
+	background: #FFF;
+}
 @media (min-width: 1024px) {
 	.mobile-nav {
 		display: none;
