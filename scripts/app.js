@@ -84,3 +84,13 @@ window.onload = function () {
     }
 };
 
+// accordéon //
+
+const accordion = document.getElementsByClassName('contentBx');
+
+for (i = 0; i<accordion.lenght; i++ ){
+    accordion[i].addEventListener('click', function(){
+        this.classList.toggle('active')
+
+    })
+}

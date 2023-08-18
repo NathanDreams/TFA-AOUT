@@ -190,8 +190,16 @@ p {
 
 .accordion .contentBx .content {
   position: relative;
-  padding: 10px;
   background: #FFF;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.accordion .contentBx.active .content {
+  height: 150px;
+  padding: 10px;
 }
 
 @media (min-width: 1024px) {
