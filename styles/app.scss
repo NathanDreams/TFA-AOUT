@@ -1,6 +1,7 @@
 @import 'utils/variables';
 @import 'components/type';
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
@@ -17,9 +18,10 @@ body {
 }
 
 h1 {
-	font-family: 'League Spartan', sans-serif;
+	font-family: 'Bebas Neue', sans-serif;
 	font-size: 37px;
 	text-decoration: none;
+	;
 }
 .home-button {
 	text-decoration: none;
@@ -31,13 +33,14 @@ h1 {
 }
 
 h2 {
-	font-family: 'League Spartan', sans-serif;
+	font-family: 'Bebas Neue', sans-serif;
 	color: #f5f5f5;
-	margin-left: 5%;
+	margin-left: 10%;
 	padding-bottom: 12.5px;
 }
 h3 {
-	font-family: 'League Spartan', sans-serif;
+	font-family: 'Bebas Neue', sans-serif;
+
 }
 p {
 	font-family: 'Roboto', sans-serif;
@@ -140,57 +143,7 @@ p {
 	transition: 0.4s;
 }
 
-.up-accordion {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.accordion {
-	
-	max-width: 800px;
-	
-	
-}
 
-.accordion .contentBx {
-	position: relative;
-	margin: 10px 20px;
-} 
-
-.accordion .contentBx .label {
-	position: relative;
-	padding: 10px;
-	background: #333;
-	color: #f1f1f1;
-	cursor: pointer;
-}
-.accordion .contentBx .label:before {
-	content: '+';
-	position: absolute;
-	top: 50%;
-	right: 20px;
-	transform: translateY(-50%);
-	font-size: 1.5em;
-}
-.accordion .contentBx .content {
-	position: relative;
-	background: #3E885B;
-	height: 0;
-	overflow: hidden;
-	transition: 0.5s;
-	overflow-y: auto;
-
-}
-.accordion .content {
-	max-width: 50ch;
-}
-.accordion .contentBx.active .content {
-	height: 150px;
-	padding: 10px;
-}
 @media (min-width: 1024px) {
 	.mobile-nav {
 		display: none;
@@ -278,20 +231,23 @@ header {
 	transform: scale(1.05);
  }
   .first-text {
-	padding-top: 25px;
+	padding-top: 26px;
 	font-size: 18px;
   }
 
 
   .text-rencontre {
-	font-size: 18px;
+	font-size: 25px;
 	height: 1.4;
+	margin-left: 10%;
   }
 
   .text-rencontre2 {
-	font-size: 18px;
+	font-size: 25px;
 	height: 1.4;
 	margin-top: 100px;
+	margin-left: 10%;
+
 
   }
 
@@ -323,16 +279,16 @@ header {
   }
   
 .second-section {
-	margin-top: 250px;
+	margin-top: 100px;
 	
 }
 
 .third-section {
-	margin-top: 100px;
+	margin-top: 20px;
 }
 @media (min-width: 300px) and (max-width: 400px) {
 	.second-section {
-		padding-top: 250px;
+		padding-top: 100px;
 	}
 	.rounded-button {
 		margin-left: auto; /* Supprimez margin-left: 50%; */
@@ -345,6 +301,10 @@ header {
 	}
 }
 @media (min-width: 300px) and (max-width: 1024px) {
+
+h1 {
+	margin-left: 20%;
+}
 .image-graph {
 	width: 200px;
 	display: block; /* Permet d'appliquer des marges et de centrer l'image horizontalement */
@@ -362,6 +322,23 @@ header {
 	margin-top: 75px;
 	transition: transform 0.4s ease;
   }
+
+
+.container-module-image {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.module-image {
+	display: block; /* Permet d'appliquer des marges et de centrer l'image horizontalement */
+    margin-left: auto; 
+    margin-right: auto;
+	width: 70%;
+	margin: 10px 0;
+}
+
+
+
  }
 .image-graph:hover {
 	transform: scale(1.05);
@@ -419,7 +396,9 @@ header {
 .fourth-section-2 {
 	background-color: #3E885B;
 }
-
+.second-bis-fourth-section {
+	background-color: #00292B;
+}
 .texte-solution {
 	text-align: center;
 	font-weight: bold;
@@ -435,13 +414,7 @@ header {
 	background-color: #3E885B;
 }
 
-.sixth-section {
-	padding-top: 25px;
-	display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .titre-module {
 	color: #000000;
@@ -490,7 +463,7 @@ header {
   }
   
   .intro-content {
-	font-family: 'League Spartan', sans-serif;
+	font-family: 'Bebas Neue', sans-serif;
 	display: flex;
 	justify-content: space-between;
 	cursor: pointer;
@@ -520,16 +493,14 @@ header {
 	height: 10px;
 	border: none;
 }
-.text-rencontre3 {
-	padding-top: 10px;
-}
+
 
 .titre-module {
-	margin-left: 11%;
+	margin-left: 20%;
 }
 .texte-module {
 	font-size: 24px;
-	margin-left: 11%;
+	margin-left: 20%;
 	color: #000000;
 }
 
@@ -566,100 +537,14 @@ header {
 		 
 	}
 
-	@media (min-width: 1024px) and (max-width: 1048px) {
-
-		.image-graph {
-			position: absolute;
-			width: 300px;
-			left: 65%;
-			top: 1250px;
-			
-		}
-		.image-graph2 {
-			position: absolute;
-			width: 300px;
-			left: 65%;
-			top: 1750px;
-		}
-	}
-	@media (min-width: 1048px) and (max-width: 1370px) {
-
-		.image-graph {
-			position: absolute;
-			width: 300px;
-			left: 65%;
-			top: 1250px;
-			
-		}
-		.image-graph2 {
-			position: absolute;
-			width: 300px;
-			left: 65%;
-			top: 1750px;
-		}
-
-	}
-
-	@media (min-width: 1370px) and (max-width: 1520px) {
-
-		.image-graph {
-			position: absolute;
-			width: 300px;
-			left: 65%;
-			top: 1150px;
-			
-		}
-		.image-graph2 {
-			position: absolute;
-			width: 300px;
-			left: 65%;
-			top: 1650px;
-		}
-
-	}
-
-	@media (min-width: 1520px) and (max-width: 1720px) {
-
-		.image-graph {
-			position: absolute;
-			width: 300px;
-			left: 65%;
-			top: 1050px;
-			
-		}
-		.image-graph2 {
-			position: absolute;
-			width: 300px;
-			left: 65%;
-			top: 1550px;
-		}
-
-	}
-
-	@media (min-width: 1720px) and (max-width: 2000px) {
-
-		.image-graph {
-			position: absolute;
-			width: 300px;
-			left: 65%;
-			top: 1100px;
-			
-		}
-		.image-graph2 {
-			position: absolute;
-			width: 300px;
-			left: 65%;
-			top: 1600px;
-		}
-
-	}
+	
   
 
   @media (min-width: 1024px) {
 
 
 	h1 {
-		margin-left: 35px;
+		margin-left: 49%;
 		font-size: 34px;
 	}
 
@@ -672,6 +557,10 @@ header {
 	p {
 		max-width: 45ch;
 		
+	}
+
+	.conclusion {
+		margin-left: 5%;
 	}
 	.section {
 		display: flex;
@@ -702,24 +591,13 @@ header {
 	  }
 	  
 	  .second-section {
-		margin-top: 350px;
-	  }
-
-	  .text-graph {
-		font-size: 24px;
-	  }
-	  .text-rencontre {
-		font-size: 24px;
-	  }
-	  .text-rencontre2 {
-		font-size: 24px;
-		padding-top: 20px;
+		margin-top: 100px;
 		
+        
 	  }
+	 
 
-	  .third-section {
-		padding-top: 75px;
-	  }
+	 
 
 	  .third-section {
 		display: flex;
@@ -754,6 +632,10 @@ header {
     text-align: center;
 }
 
+
+.second-bis-fourth-section {
+	background-color: #00292B;
+	 }
 .fourth-section-2 {
 	display: flex;
 	flex-direction: column;
@@ -782,7 +664,7 @@ header {
 }
 .but {
 	text-align: center; /* Centrer le texte du titre */
-	padding-right: 90px;
+	padding-right: 210px;
 }
 .logo-earth {
 	
@@ -807,61 +689,98 @@ header {
 
 }
 
-.module-image {
-	
-	margin-left: 15%;
-	margin-right: auto;
-	padding-top: 30px;
-}
 
-.module-image2 {
-	width: 37%;
-	border: 1px solid black;
+
+
+
+
+.interview {
+	position: absolute;
+	margin-top: -500px;
+    width: 600px;
+    
+	margin-left: 55%;
+		border-radius: 5%;
+		transition: transform 0.3s;
 	
-}
+ }
+ .interview:hover {
+
+	transform: scale(1.05);
+ }
+
+.container-module-image {
+	display: flex; /* Utilisation de flexbox pour aligner les images côte à côte */
+	padding-left: 10%;
+	padding-top: 30px;
+	padding-bottom: 80px;
+  }
   
+  .module-image {
+	width: 40%;
+	margin-right: 100px; /* Marge entre les images */
+	transition: transform 0.3s;
+	
+  }
+  .module-image:hover {
+	transform: scale(1.2); /* Zoom de 20% lorsque l'utilisateur survole l'image */
+  }
 .ligne-vide2 {
 	height: 10px;
 	border: none;
 }
-.text-rencontre3 {
-	padding-top: 20px;
-}
+
 .sixth-section {
+    
+	margin-top: 70px;
+
+}
+
+
+@media (min-width: 1024px) {
+	.second-section {
+		margin-top: 350px;
+	}
+}
+
+.presentation-decalage {
+	margin-left: 40%;
+}
+.presentation-image-container {
+    position: relative;
+	margin-left: 5%;
+	margin-top: -400px;
 	
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 34px;
-  
+  }
 
+.titre-sixth-section {
+	margin-left: 42%;
+	font-family: 'Bebas Neue', sans-serif;
 }
-.intro-content:hover {
-	color: #3E885B;
-	transition: 0.4;
 
-}
-.sous-titre-sixth-section {
+
+   .titre-presentation {
+    margin-left: 60% !important;
+	margin-top: 60px;
 	font-size: 34px;
-}
-.sous-titre-sixth-section:hover {
-	color: #3E885B;
-	transition: 0.4;
-}
-.sous-titre-sixth-section2:hover {
-	color: #3E885B;
-	transition: 0.4;
-}
- }	 
- 
+	color: #F5F5F5;
+  }
+  
+  .text-presentation-intro {
+	margin-left: 60%;
+  }
+ .third-section {
+	margin-top: 18% !important;
+ }
  
  .seventh-section {
 	margin-top: 50px;
 	margin-bottom: 50px;
  }
 	  
- @media (min-width: 1200px) {
+ .titre-module {
+	margin-left: 29.5%;
+}
 	.first-image {
 		margin-top: 200px;
 		width: 600px; /* Ajuster la taille de l'image en fonction de tes besoins */
@@ -873,21 +792,153 @@ header {
 		margin-bottom: 75px;
 	 }
 
-
+ }
+	 @media screen and (min-width: 300px) and (max-width: 600px) { 
+	 .center-image {
+		text-align: center;
+	  }
 	
+	  .interview {
+		display: inline-block;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		border-radius: 5%;
+		margin-top: 25px;
+	  }
 
-
-	 .accordion {
+	}
+	@media screen and (min-width: 600px) and (max-width: 800px) { 
+		.center-image {
+		   text-align: center;
+		 }
+	   
+		 .interview {
+		   display: inline-block;
+		   width: 70%;
+		   margin-left: 10%;
+		   margin-right: 10%;
+		   border-radius: 5%;
+		   margin-top: 25px;
+		 }
+   
+	   }
 	
-		max-width: 1200px;
+	   @media screen and (min-width: 800px) and (max-width: 900px) { 
+		.center-image {
+		   text-align: center;
+		 }
+	   
+		 .interview {
+		   display: inline-block;
+		   width: 60%;
+		   margin-left: 10%;
+		   margin-right: 10%;
+		   border-radius: 5%;
+		   margin-top: 50px;
+		 }
+   
+	   }
+	   @media screen and (min-width: 900px) and (max-width: 1024px) { 
+		.center-image {
+		   text-align: center;
+		 }
+	   
+		 .interview {
+		   display: inline-block;
+		   width: 50%;
+		   margin-left: 10%;
+		   margin-right: 10%;
+		   border-radius: 5%;
+		   margin-top: 50px;
+		 }
+   
+	   }
+	   @media screen and (min-width: 1024px) and (max-width: 1300px) { 
 		
+	   
+		.interview {
+			position: absolute;
+			margin-top: -500px;
+			width: 300px;
+			margin-left: 72%;
+			border-radius: 5%;
+			transition: transform 0.3s;
+			
+		 }
+   
+	   }
+	   @media screen and (min-width: 1300px) and (max-width: 1400px) { 
+
+	   
+	   .interview {
+		position: absolute;
+		margin-top: -500px;
+		width: 430px;
+		margin-left: 65%;
+		border-radius: 5%;
+		transition: transform 0.3s;
+		
+	 }
+ }
+
+ @media screen and (min-width: 300px) and (max-width: 1024px) {
+	.presentation-image-container {
+		display: flex; /* Utilisation de flexbox pour centrer horizontalement */
+		justify-content: center; /* Centre les éléments horizontalement */
+		padding-top: 25px;
+	
+	}
+	
+	.titre-sixth-section {
+		font-size: 26px;
+		font-family: 'Bebas Neue', sans-serif;
+	}
+	.titre-presentation {
+		margin-left: 5% !important;
+		color: #F5F5F5;
+		font-size: 22px;
+	  }
+	  .titre-problem {
+		margin-right: 100px; /* Espacement entre le titre et le texte */
+		
+	  }
+	.presentation-image {
+
+		width: 70%;
+		margin-left: 12%;
+		margin-right: auto;
 		
 	}
+p {
+	font-size: 18px;
+}
+	.text-presentation-intro {
+		font-size: 18px;
+	}
+  }
 
 
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+	.presentation-image-container {
+		display: flex; /* Utilisation de flexbox pour centrer horizontalement */
+		justify-content: center; /* Centre les éléments horizontalement */
+		padding-top: 25px;
+		width: 25%;
+	
+	}
+	 }
+	 @media screen and (min-width: 1200px) and (max-width: 1800px) {
+		.presentation-image-container {
+			display: flex; /* Utilisation de flexbox pour centrer horizontalement */
+			justify-content: center; /* Centre les éléments horizontalement */
+			padding-top: 25px;
+			width: 25%;
+			margin-left: 230px;
+		
+		}
+		 }
 
-
- }
 
  .footer-distributed {
 	background-color: #00292B;
