@@ -190,7 +190,7 @@ p {
 
 .accordion .contentBx .content {
   position: relative;
-  background: #FFF;
+  background: #3E885B;
   height: 0;
   overflow: hidden;
   transition: 0.5s;
@@ -443,11 +443,6 @@ nav a {
   color: #000000;
 }
 
-.texte-module {
-  color: #000000;
-  font-size: 18px;
-}
-
 .but {
   color: #000000;
 }
@@ -536,6 +531,7 @@ nav a {
 .texte-module {
   font-size: 24px;
   margin-left: 11%;
+  color: #000000;
 }
 
 .video-container {
@@ -743,6 +739,21 @@ nav a {
   .but {
     font-size: 34px;
   }
+  .texte-module {
+    max-width: 50ch;
+    font-size: 28px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .module-image {
+    margin-left: 15%;
+    margin-right: auto;
+    padding-top: 30px;
+  }
+  .module-image2 {
+    width: 37%;
+    border: 1px solid black;
+  }
   .ligne-vide2 {
     height: 10px;
     border: none;
@@ -787,6 +798,9 @@ nav a {
   .seventh-section {
     margin-top: 150px;
     margin-bottom: 75px;
+  }
+  .accordion {
+    max-width: 1200px;
   }
 }
 .footer-distributed {
